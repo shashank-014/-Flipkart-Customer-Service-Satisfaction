@@ -14,9 +14,26 @@ This folder contains a Streamlit project for analyzing Flipkart support interact
 
 - `app.py` - Streamlit app for the project
 - `Customer_support_data.csv` - source dataset
-- `project_notebook_code_export.py` - notebook export used as a reference
 - `Customer_Service_Satisfaction_Prediction_for_Flipkart_Using_Machine_Learning.ipynb` - original notebook
-- `requirements.txt` - Python dependencies
+
+## App Walkthrough
+
+The app is laid out in the same order I would present it:
+
+1. Overview for the project story and key stats.
+2. Data understanding for the raw support file.
+3. Data wrangling for the cleanup and label setup.
+4. EDA for the visual patterns.
+5. Hypothesis testing for the timing checks.
+6. Feature engineering for the usable model inputs.
+7. Modeling for the comparison table and final choice.
+8. Conclusion for the short business takeaway.
+
+## Project Style
+
+The app and docs keep the same tone as the notebook:
+- simple, direct language
+- business-first framing
 
 ## How To Run
 

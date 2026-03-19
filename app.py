@@ -813,6 +813,17 @@ def render_sidebar(summary: dict[str, object]) -> str:
     st.sidebar.write(f"Class split: {summary['satisfied']} satisfied / {summary['not_satisfied']} not satisfied")
     st.sidebar.write(f"Date range: {summary['start_date']} to {summary['end_date']}")
     st.sidebar.write(f"Missing cells: {summary['missing_cells']}")
+    st.sidebar.markdown("### Presentation Walkthrough")
+    st.sidebar.markdown(
+        """
+        1. Start with the overview to get the customer story.
+        2. Read the data section to understand the raw support file.
+        3. Move through the EDA charts in the order shown.
+        4. Check the hypothesis section for the support timing logic.
+        5. Review the model comparison and the final result.
+        6. Close with the conclusion for the plain takeaway.
+        """
+    )
 
     section = st.sidebar.radio(
         "Jump to section",
@@ -833,8 +844,8 @@ def render_sidebar(summary: dict[str, object]) -> str:
         """
         - Human tone in the explanations
         - Short, functional comments in code
-        - Folder-specific files stay inside `Flipkart/current`
-        - Old docs are archived inside `DELETED_FILES`
+        - Keep the talk track direct and presentation-friendly
+        - Stay close to the notebook style without sounding stiff
         """
     )
     return section
@@ -882,6 +893,20 @@ def overview_section(df: pd.DataFrame, summary: dict[str, object]) -> None:
                     The model is not here to replace the support team. It is here to spot risk earlier, so the team can
                     prioritize response timing, issue types, and high-risk support situations before the customer gets
                     frustrated.
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+        st.markdown(
+            """
+            <div class="card">
+                <h3>How to present this app</h3>
+                <div class="small_note">
+                    The flow is easy to speak through.
+                    Start with the support problem, move into the charts, call out the timing patterns, and then end
+                    with the model choice.
+                    That keeps the presentation clear and human.
                 </div>
             </div>
             """,
