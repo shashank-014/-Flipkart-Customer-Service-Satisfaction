@@ -804,7 +804,7 @@ def render_sidebar(summary: dict[str, object]) -> str:
         """
         Support data, customer experience, and a clear model story.
 
-        The layout follows the same style as the notebook and presentation notes.
+        The layout follows the same style as the notebook.
         """
     )
     st.sidebar.markdown("### Quick facts")
@@ -839,15 +839,7 @@ def render_sidebar(summary: dict[str, object]) -> str:
         ],
     )
     st.sidebar.markdown("---")
-    st.sidebar.markdown("### Build notes")
-    st.sidebar.markdown(
-        """
-        - Human tone in the explanations
-        - Short, functional comments in code
-        - Keep the talk track direct and presentation-friendly
-        - Stay close to the notebook style without sounding stiff
-        """
-    )
+    
     return section
 
 
