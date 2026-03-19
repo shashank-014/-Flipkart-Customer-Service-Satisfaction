@@ -1,0 +1,9 @@
+DELETED_FILES/
+history.md
+.codex/
+.streamlit/secrets.toml
+__pycache__/
+artifacts/
+*.joblib
+*.pkl
+*.pyc
