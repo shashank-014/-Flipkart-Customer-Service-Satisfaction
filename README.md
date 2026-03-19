@@ -16,18 +16,7 @@ This folder contains a Streamlit project for analyzing Flipkart support interact
 - `Customer_support_data.csv` - source dataset
 - `project_notebook_code_export.py` - notebook export used as a reference
 - `Customer_Service_Satisfaction_Prediction_for_Flipkart_Using_Machine_Learning.ipynb` - original notebook
-- `Project_Presentation_Script_20min.md` - updated presentation read-out
 - `requirements.txt` - Python dependencies
-- `DELETED_FILES/` - archived older docs from this folder
-
-## Project Style
-
-The app and docs keep the same tone as the notebook:
-
-- first-person explanations
-- simple, direct language
-- business-first framing
-- short functional code comments
 
 ## How To Run
 
@@ -74,11 +63,3 @@ The app compares:
 - XGBoost, if available in the environment
 
 The split is stratified because the target is imbalanced.
-
-## Presentation Notes
-
-The updated presentation read-out is in `Project_Presentation_Script_20min.md`.
-
-## History
-
-See `history.md` for the latest update log inside this folder.
